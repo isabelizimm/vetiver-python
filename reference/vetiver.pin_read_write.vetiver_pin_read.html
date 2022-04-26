@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>vetiver.VetiverAPI.vetiver_post &#8212; vetiver 0.1.3 documentation</title>
+    <title>vetiver.pin_read_write.vetiver_pin_read &#8212; vetiver 0.1.3 documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -31,10 +31,11 @@
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="vetiver.vetiver_endpoint" href="vetiver.vetiver_endpoint.html" />
-    <link rel="prev" title="vetiver.VetiverAPI.run" href="vetiver.VetiverAPI.run.html" />
+    <link rel="next" title="vetiver.pin_read_write.vetiver_pin_write" href="vetiver.pin_read_write.vetiver_pin_write.html" />
+    <link rel="prev" title="vetiver.VetiverModel" href="vetiver.VetiverModel.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -86,14 +87,27 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../index.html">
+                    vetiver 🏺
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Version
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="vetiver.VetiverModel.html">
    vetiver.VetiverModel
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="vetiver.pin_read_write.vetiver_pin_read.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    vetiver.pin_read_write.vetiver_pin_read
   </a>
  </li>
@@ -103,19 +117,12 @@
   </a>
  </li>
 </ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Deploy
+ </span>
+</p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="vetiver.VetiverModel.html">
-   vetiver.VetiverModel
-  </a>
- </li>
-</ul>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="vetiver.VetiverModel.html">
-   vetiver.VetiverModel
-  </a>
- </li>
  <li class="toctree-l1">
   <a class="reference internal" href="vetiver.VetiverAPI.html">
    vetiver.VetiverAPI
@@ -126,14 +133,19 @@
    vetiver.VetiverAPI.run
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="vetiver.VetiverAPI.vetiver_post.html">
    vetiver.VetiverAPI.vetiver_post
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="vetiver.vetiver_endpoint.html">
    vetiver.vetiver_endpoint
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="vetiver.predict.html">
+   vetiver.predict
   </a>
  </li>
  <li class="toctree-l1">
@@ -241,7 +253,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/tidymodels/vetiver-python/issues/new?title=Issue%20on%20page%20%2Fapi_doc/vetiver.VetiverAPI.vetiver_post.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/tidymodels/vetiver-python/issues/new?title=Issue%20on%20page%20%2Freference/vetiver.pin_read_write.vetiver_pin_read.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -258,7 +270,7 @@ title="Open an issue"
       </li>
       
       <li>
-        <a href="https://github.com/tidymodels/vetiver-python/edit/master/api_doc/vetiver.VetiverAPI.vetiver_post.rst"
+        <a href="https://github.com/tidymodels/vetiver-python/edit/master/reference/vetiver.pin_read_write.vetiver_pin_read.rst"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -286,7 +298,7 @@ title="Edit this page"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/api_doc/vetiver.VetiverAPI.vetiver_post.rst.txt"
+        <a href="../_sources/reference/vetiver.pin_read_write.vetiver_pin_read.rst.txt"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -335,7 +347,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>vetiver.VetiverAPI.vetiver_post</h1>
+                <h1>vetiver.pin_read_write.vetiver_pin_read</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -347,22 +359,22 @@ title="Print to PDF"
                 
               <div>
                 
-  <section id="vetiver-vetiverapi-vetiver-post">
-<h1>vetiver.VetiverAPI.vetiver_post<a class="headerlink" href="#vetiver-vetiverapi-vetiver-post" title="Permalink to this headline">#</a></h1>
-<dl class="py method">
-<dt class="sig sig-object py" id="vetiver.VetiverAPI.vetiver_post">
-<span class="sig-prename descclassname"><span class="pre">VetiverAPI.</span></span><span class="sig-name descname"><span class="pre">vetiver_post</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">endpoint_fx</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endpoint_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'custom_endpoint'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vetiver.VetiverAPI.vetiver_post" title="Permalink to this definition">#</a></dt>
-<dd><p>Create new POST endpoint
-:param endpoint_fx: Custom function to be run at endpoint
-:type endpoint_fx: typing.Callable
-:param endpoint_name: Name of endpoint
-:type endpoint_name: str</p>
+  <section id="vetiver-pin-read-write-vetiver-pin-read">
+<h1>vetiver.pin_read_write.vetiver_pin_read<a class="headerlink" href="#vetiver-pin-read-write-vetiver-pin-read" title="Permalink to this headline">#</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="vetiver.pin_read_write.vetiver_pin_read">
+<span class="sig-prename descclassname"><span class="pre">vetiver.pin_read_write.</span></span><span class="sig-name descname"><span class="pre">vetiver_pin_read</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">board</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">pins.boards.BaseBoard</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">version</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="vetiver.VetiverModel.html#vetiver.VetiverModel" title="vetiver.vetiver_model.VetiverModel"><span class="pre">vetiver.vetiver_model.VetiverModel</span></a></span></span><a class="headerlink" href="#vetiver.pin_read_write.vetiver_pin_read" title="Permalink to this definition">#</a></dt>
+<dd><p>Read pin and populate VetiverModel</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>Key: endpoint_name Value: Output of endpoint_fx, in list format</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>board</strong> (<em>pins.BaseBoard</em>) – Board where pin is held</p></li>
+<li><p><strong>name</strong> (<em>string</em>) – Name of pin</p></li>
+<li><p><strong>versioned</strong> (<em>bool</em>) – Whether or not the pin should be versioned</p></li>
+</ul>
 </dd>
 <dt class="field-even">Return type</dt>
-<dd class="field-even"><p>dict</p>
+<dd class="field-even"><p><a class="reference internal" href="vetiver.VetiverModel.html#vetiver.VetiverModel" title="vetiver.VetiverModel">vetiver.VetiverModel</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -377,17 +389,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="vetiver.VetiverAPI.run.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="vetiver.VetiverModel.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">vetiver.VetiverAPI.run</p>
+            <p class="prev-next-title">vetiver.VetiverModel</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="vetiver.vetiver_endpoint.html" title="next page">
+    <a class='right-next' id="next-link" href="vetiver.pin_read_write.vetiver_pin_write.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">vetiver.vetiver_endpoint</p>
+        <p class="prev-next-title">vetiver.pin_read_write.vetiver_pin_write</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
