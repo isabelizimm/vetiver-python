@@ -457,19 +457,19 @@ API, and the sections below (linked to the right-hand sidebar) break it into sim
 <col style="width: 90%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="reference/vetiver.VetiverAPI.html#vetiver.VetiverAPI" title="vetiver.VetiverAPI"><code class="xref py py-obj docutils literal notranslate"><span class="pre">VetiverAPI</span></code></a>(model, check_ptype, port[, host, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="reference/vetiver.VetiverAPI.html#vetiver.VetiverAPI" title="vetiver.VetiverAPI"><code class="xref py py-obj docutils literal notranslate"><span class="pre">VetiverAPI</span></code></a>(model, check_ptype[, app_factory])</p></td>
 <td><p>Create model aware API</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="reference/vetiver.VetiverAPI.run.html#vetiver.VetiverAPI.run" title="vetiver.VetiverAPI.run"><code class="xref py py-obj docutils literal notranslate"><span class="pre">run</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="reference/vetiver.VetiverAPI.run.html#vetiver.VetiverAPI.run" title="vetiver.VetiverAPI.run"><code class="xref py py-obj docutils literal notranslate"><span class="pre">run</span></code></a>([port, host])</p></td>
 <td><p>Start API</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="reference/vetiver.VetiverAPI.vetiver_post.html#vetiver.VetiverAPI.vetiver_post" title="vetiver.VetiverAPI.vetiver_post"><code class="xref py py-obj docutils literal notranslate"><span class="pre">vetiver_post</span></code></a>(endpoint_fx[, endpoint_name])</p></td>
 <td><p>Create new POST endpoint</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="reference/vetiver.vetiver_endpoint.html#vetiver.vetiver_endpoint" title="vetiver.vetiver_endpoint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">vetiver_endpoint</span></code></a>([url])</p></td>
-<td><p>Wrap url</p></td>
+<td><p>Wrap url where VetiverModel will be deployed</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="reference/vetiver.predict.html#vetiver.predict" title="vetiver.predict"><code class="xref py py-obj docutils literal notranslate"><span class="pre">predict</span></code></a>(endpoint, data)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="reference/vetiver.predict.html#vetiver.predict" title="vetiver.predict"><code class="xref py py-obj docutils literal notranslate"><span class="pre">predict</span></code></a>(endpoint, data, **kw)</p></td>
 <td><p>Make a prediction from model endpoint</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="reference/vetiver.load_pkgs.html#vetiver.load_pkgs" title="vetiver.load_pkgs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">load_pkgs</span></code></a>([model, packages, path])</p></td>
