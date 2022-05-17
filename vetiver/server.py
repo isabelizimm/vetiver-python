@@ -154,7 +154,7 @@ class VetiverAPI:
         host: str = "127.0.0.1",
         **kw):
         """Start API"""
-        _jupyter_nb()
+        # _jupyter_nb()
         uvicorn.run(self.app, port=port, host=host, **kw)
 
     def _custom_openapi(self):
