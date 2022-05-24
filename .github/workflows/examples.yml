@@ -9,14 +9,19 @@ on:
     types: [published]
 
 jobs:
-  create-example:
-    name: "Example run"
+  create-examples:
+    name: "Example"
     runs-on: ubuntu-latest
     steps:
-      - run: |
-        python -m pip install --upgrade pip
-        python -m pip install requirements/dev.txt
-        python examples/coffeeratings.py
-        
-      - run: | 
-        git diff
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements/dev.txt
+          python examples/coffeeratings.py
+      - name: Git diff
+        run: |
+          git diff
