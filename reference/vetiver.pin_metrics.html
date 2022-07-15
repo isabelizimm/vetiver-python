@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>vetiver.pin_metrics &#8212; vetiver 0.1.5 documentation</title>
+    <title>vetiver.pin_metrics &#8212; vetiver Commit: 9772ec1 documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -79,7 +79,7 @@
       <img src="../_static/logo.png" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">vetiver 0.1.5 documentation</h1>
+      <h1 class="site-logo" id="site-title">vetiver Commit: 9772ec1 documentation</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
@@ -387,8 +387,25 @@ title="Print to PDF"
 <h1>vetiver.pin_metrics<a class="headerlink" href="#vetiver-pin-metrics" title="Permalink to this headline">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="vetiver.pin_metrics">
-<span class="sig-prename descclassname"><span class="pre">vetiver.</span></span><span class="sig-name descname"><span class="pre">pin_metrics</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">board</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">df_metrics</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">metrics_pin_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overwrite</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vetiver.pin_metrics" title="Permalink to this definition">#</a></dt>
-<dd></dd></dl>
+<span class="sig-prename descclassname"><span class="pre">vetiver.</span></span><span class="sig-name descname"><span class="pre">pin_metrics</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">board</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">df_metrics</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">pandas.core.frame.DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">metrics_pin_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pin_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'index'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overwrite</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">pandas.core.frame.DataFrame</span></span></span><a class="headerlink" href="#vetiver.pin_metrics" title="Permalink to this definition">#</a></dt>
+<dd><p>Update an existing pin storing model metrics over time</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>board</strong> – Pins board</p></li>
+<li><p><strong>df_metrics</strong> (<em>pd.DataFrame</em>) – Dataframe of metrics over time, such as created by <cite>vetiver_compute_metrics()</cite></p></li>
+<li><p><strong>metrics_pin_name</strong> – Pin name for where the metrics are stored</p></li>
+<li><p><strong>index_name</strong> – The column in df_metrics containing the aggregated dates or datetimes.
+Note that this defaults to a column named “index”.</p></li>
+<li><p><strong>overwrite</strong> (<em>bool</em>) – If TRUE (the default), overwrite any metrics for
+dates that exist both in the existing pin and
+new metrics with the new values. If FALSE, error
+when the new metrics contain overlapping dates with
+the existing pin.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
 
 </section>
 
